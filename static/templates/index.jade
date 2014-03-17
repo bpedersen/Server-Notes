@@ -1,0 +1,11 @@
+h1 Index
+#user
+	if user.facebook
+		- var facebook = user.facebook
+			h1 Facebook: 
+				input(type='text',value='#{facebook.name.givenName}')
+	if user.twitter
+		- var twitter = user.twitter
+			h1 Twitter: 
+				input(type='text',value='#{twitter.displayName}')
+	

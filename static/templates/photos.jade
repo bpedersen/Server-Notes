@@ -1,0 +1,8 @@
+if data
+	each photo in data
+		if photo.source
+			div
+				span= photo.name
+				img(src=photo.source)
+				if photo.from
+					span= photo.from.name
